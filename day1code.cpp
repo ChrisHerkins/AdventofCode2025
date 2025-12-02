@@ -26,7 +26,7 @@ int main(){
   cin>>ifile;
   ifstream infile(ifile);
   string line;
-  int number;
+  int number = 50;
   int count = 0;
   while(getline(infile,line)){
     bool left = line.substr(0,1) == "L";
@@ -36,6 +36,6 @@ int main(){
     }
   }
   infile.close();
-  cout<<count<<endl;
+  cout<<"Number of times pointing North: "<<count<<endl;
   return 0;
 }
